@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Galería tipo Pinterest - campusMVP</title>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,500,600,700" rel="stylesheet" type="text/css">
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            background-color: #f3f3f3;
+        }
+
+        header {
+            text-align: center;
+        }
+        
+        main > header {
+            background-color: #02223a;
+        }
+
+            #galeria {
+            margin: 1rem auto;
+            width:100%;
+            max-width:960px;
+            padding:0 20px 20px;
+            box-sizing: border-box;
+            column-count: 3;
+
+            /* Espacio entre columnas */
+            -moz-column-gap: 00px;
+            column-gap: 00px;
+            
+            /* Filete entre columnas */
+            /*-moz-column-rule: 1px solid #bbb;
+            -webkit-column-rule: 1px solid #bbb;
+            column-rule: 1px solid #bbb;*/
+
+
+        }
+        article {
+            background:#fff;
+            border-radius:5px;
+            border:1px solid #ccc;
+            margin:0 0 02px 0;
+            text-align: center;
+            max-width: 100%;
+
+            /*Evitamos que se corte al cambiar de columna*/
+           
+        }
+        
+        article img {
+            width:100%;
+        }
+ 
+        /* Móviles en horizontal o tablets en vertical */
+        @media (max-width: 767px) { 
+            #galeria {
+                columns:2;
+            }
+
+        }
+        
+        /* Móviles en vertical */
+
+        @media (max-width: 480px) {
+            #galeria {
+                columns: 3;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+        </header>
+        <section id="galeria">
+        <article>
+            <a title="Los Tejos" href="https://mega.nz/#!ABJAAQSa!fqs_wxdS_-WRw26GJpZjVTlM6vP5fVIeDkNRNX1iPX4">
+                    <img src="imagenes/geminis.jpg"  />
+            </a>
+        </article>
+        <article>
+                    <img src="imagenes/geminis.jpg" href="https://mega.nz/#!ABJAAQSa!fqs_wxdS_-WRw26GJpZjVTlM6vP5fVIeDkNRNX1iPX4" />
+            
+        </article>
+        <article>
+                    <img src="imagenes/geminis.jpg" href="https://mega.nz/#!ABJAAQSa!fqs_wxdS_-WRw26GJpZjVTlM6vP5fVIeDkNRNX1iPX4" />
+            
+        </article>
+        <article>
+                    <img src="imagenes/geminis.jpg" href="https://mega.nz/#!ABJAAQSa!fqs_wxdS_-WRw26GJpZjVTlM6vP5fVIeDkNRNX1iPX4" />
+            
+        </article>
+        <article>
+                    <img src="imagenes/geminis.jpg" href="https://mega.nz/#!ABJAAQSa!fqs_wxdS_-WRw26GJpZjVTlM6vP5fVIeDkNRNX1iPX4" />
+            
+        </article>
+        <article>
+                    <img src="imagenes/geminis.jpg" href="https://mega.nz/#!ABJAAQSa!fqs_wxdS_-WRw26GJpZjVTlM6vP5fVIeDkNRNX1iPX4" />
+            
+        </article>
+        </section>
+    </main>
+</body>
+
+</html>
